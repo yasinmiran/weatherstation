@@ -4,4 +4,6 @@ public interface DisplayElement {
 
     void display();
 
+    boolean isEnabled();
+
 }

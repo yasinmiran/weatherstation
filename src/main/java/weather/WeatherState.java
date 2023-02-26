@@ -30,4 +30,13 @@ public class WeatherState {
         this.pressure = pressure;
     }
 
+    @Override
+    public String toString() {
+        return "WeatherState{" +
+                "temperature=" + temperature +
+                ", humidity=" + humidity +
+                ", pressure=" + pressure +
+                '}';
+    }
+
 }

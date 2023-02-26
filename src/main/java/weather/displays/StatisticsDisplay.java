@@ -1,7 +1,7 @@
 package weather.displays;
 
-import observer.Observer;
 import weather.WeatherState;
+import weather.observer.Observer;
 
 public class StatisticsDisplay implements Observer<WeatherState>, DisplayElement {
 
@@ -38,6 +38,11 @@ public class StatisticsDisplay implements Observer<WeatherState>, DisplayElement
                         + maxTemp + "/"
                         + minTemp
         );
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
     }
 
 }

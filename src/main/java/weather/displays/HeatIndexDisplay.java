@@ -1,7 +1,7 @@
 package weather.displays;
 
-import observer.Observer;
 import weather.WeatherState;
+import weather.observer.Observer;
 
 public class HeatIndexDisplay implements Observer<WeatherState>, DisplayElement {
 
@@ -30,6 +30,11 @@ public class HeatIndexDisplay implements Observer<WeatherState>, DisplayElement 
     @Override
     public void display() {
         System.out.println("Heat index is " + heatIndex);
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
     }
 
 }

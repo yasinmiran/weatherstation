@@ -1,10 +1,12 @@
-package interceptor;
+package framework;
 
 import java.util.*;
 
 public class InterceptorRegistry {
 
     private static final Map<Class<?>, List<Interceptor>> INTERCEPTORS = new HashMap<>();
+
+    private InterceptorRegistry() {}
 
     public static void register(Class<?> clazz, Interceptor interceptor) {
         if (!INTERCEPTORS.containsKey(clazz)) {

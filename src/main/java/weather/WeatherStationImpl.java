@@ -1,6 +1,6 @@
 package weather;
 
-import observer.Observer;
+import weather.observer.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,31 +28,37 @@ public class WeatherStationImpl implements WeatherStation {
     @Override
     public void notifyObservers() {
         for (Observer<WeatherState> subscriber : this.subscribers) {
-            subscriber.update(this.state);
+            sendNotification(subscriber);
         }
     }
 
     @Override
-    public void measurementsChanged() {
-        notifyObservers();
+    public void sendNotification(Observer<WeatherState> observer) {
+        observer.update(this.state);
     }
 
-    @Override
     public void setMeasurements(float temperature, float humidity, float pressure) {
+        System.out.println("setting new measurements...");
         this.state.setTemperature(temperature);
         this.state.setHumidity(humidity);
         this.state.setPressure(pressure);
-        measurementsChanged();
+        notifyObservers();
     }
 
-    @Override
     public List<Observer<WeatherState>> getSubscribers() {
         return subscribers;
     }
 
-    @Override
     public WeatherState getState() {
         return state;
+    }
+
+    @Override
+    public String toString() {
+        return "WeatherStationImpl{" +
+                "subscribers=" + subscribers +
+                ", state=" + state +
+                '}';
     }
 
 }

@@ -1,7 +1,7 @@
 package weather.displays;
 
-import observer.Observer;
 import weather.WeatherState;
+import weather.observer.Observer;
 
 public class CurrentConditionsDisplay implements Observer<WeatherState>, DisplayElement {
 
@@ -18,6 +18,11 @@ public class CurrentConditionsDisplay implements Observer<WeatherState>, Display
     public void display() {
         System.out.println("Current conditions: " + temperature
                 + "F degrees and " + humidity + "% humidity");
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return false;
     }
 
 }

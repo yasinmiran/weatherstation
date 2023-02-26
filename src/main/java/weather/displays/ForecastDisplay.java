@@ -1,7 +1,7 @@
 package weather.displays;
 
-import observer.Observer;
 import weather.WeatherState;
+import weather.observer.Observer;
 
 public class ForecastDisplay implements Observer<WeatherState>, DisplayElement {
 
@@ -25,6 +25,11 @@ public class ForecastDisplay implements Observer<WeatherState>, DisplayElement {
         } else if (currentPressure < lastPressure) {
             System.out.println("Watch out for cooler, rainy weather");
         }
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
     }
 
 }

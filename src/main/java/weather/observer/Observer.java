@@ -1,4 +1,4 @@
-package observer;
+package weather.observer;
 
 public interface Observer<State> {
 
