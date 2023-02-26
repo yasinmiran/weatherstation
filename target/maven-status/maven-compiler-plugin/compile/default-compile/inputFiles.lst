@@ -1,0 +1,17 @@
+/Users/yasin/development/weatherstation/src/main/java/framework/InterceptorRegistry.java
+/Users/yasin/development/weatherstation/src/main/java/weather/WeatherStationImpl.java
+/Users/yasin/development/weatherstation/src/main/java/weather/displays/ForecastDisplay.java
+/Users/yasin/development/weatherstation/src/main/java/weather/displays/DisplayElement.java
+/Users/yasin/development/weatherstation/src/main/java/interceptors/LoggingInterceptor.java
+/Users/yasin/development/weatherstation/src/main/java/weather/displays/CurrentConditionsDisplay.java
+/Users/yasin/development/weatherstation/src/main/java/weather/observer/Observer.java
+/Users/yasin/development/weatherstation/src/main/java/framework/Dispatcher.java
+/Users/yasin/development/weatherstation/src/main/java/weather/WeatherStation.java
+/Users/yasin/development/weatherstation/src/main/java/weather/displays/StatisticsDisplay.java
+/Users/yasin/development/weatherstation/src/main/java/weather/displays/HeatIndexDisplay.java
+/Users/yasin/development/weatherstation/src/main/java/Main.java
+/Users/yasin/development/weatherstation/src/main/java/weather/WeatherState.java
+/Users/yasin/development/weatherstation/src/main/java/interceptors/EnabledDisplaysInterceptor.java
+/Users/yasin/development/weatherstation/src/main/java/weather/observer/Observable.java
+/Users/yasin/development/weatherstation/src/main/java/framework/Intercepted.java
+/Users/yasin/development/weatherstation/src/main/java/framework/Interceptor.java
